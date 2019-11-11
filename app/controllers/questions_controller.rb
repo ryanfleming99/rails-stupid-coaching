@@ -1,10 +1,10 @@
 class QuestionsController < ApplicationController
   def ask
+    # blank method to get access in the view
   end
 
   def answer
     @question = params[:question]
-
     if @question == 'I am going to work'
       @answer = 'great'
     elsif @question.include?('?')
